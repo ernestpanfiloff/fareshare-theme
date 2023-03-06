@@ -54,6 +54,7 @@ header {
     width: 75%;
 }
 
+
 nav ul {
     display: flex;
     list-style: none;
@@ -75,6 +76,18 @@ nav ul li {
 nav ul li:hover {
     background-color: #227363;
     border-bottom: 2px solid #FFD55C;
+}
+
+.header-content-hamburger {
+    display: none;
+}
+
+.header-content-hamburger-line {
+    width: 1.75rem;
+    height: 0.25rem;
+    background-color: #FFFFFC;
+    margin: 0.25rem 0;
+    border-radius: 0.25rem;
 }
 
 
@@ -127,4 +140,21 @@ nav ul li:hover {
     width: 100%;
     transition: 0.5s ease-in-out;
     border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+}
+
+
+@media screen and (max-width: 900px) {
+    nav {
+        display: none;
+    }
+
+    .header-content-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header-content-hamburger {
+        display: block;
+    }
 }
