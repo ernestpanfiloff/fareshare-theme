@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.button {
+    color: #004E3F;
+    outline: none;
+    border: none;
+    padding: 1rem 1.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 2px solid #227363;
+}
+
+.button-yellow {
+    background-color: #FFD55C;
+
+}
+
+
+
+
+/* Header */
+header {
+    padding: 1.25rem 0;
+    background-color: #004E3F;
+    border-bottom: 1px solid #227363;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-content-logo img {
+    width: 75%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #FFFFFC;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+nav ul li {
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    border-bottom: 2px solid #004E3F;
+}
+
+nav ul li:hover {
+    background-color: #227363;
+    border-bottom: 2px solid #FFD55C;
+}
+
+
+
+/* Hero */
+.hero {
+    padding: 2rem 0rem;
+    background-color: #004E3F;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    align-items: center;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "hero-content-left hero-content-right";
+}
+
+.hero-content-left {
+    grid-area: hero-content-left;
+}
+
+.hero-content-left h1 {
+    font-family: 'DM Serif Display', serif;
+    color: #FFFFFC;
+    font-size: 3rem;
+
+    margin-bottom: 1rem;
+}
+
+.hero-content-left p {
+    color: #87B4AD;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content-right {
+    grid-area: hero-content-right;
+}
+
+.hero-content-right img {
+    width: 100%;
+    border-radius: 0.25rem;
+}
