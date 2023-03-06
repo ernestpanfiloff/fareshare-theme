@@ -121,5 +121,10 @@ nav ul li:hover {
 
 .hero-content-right img {
     width: 100%;
-    border-radius: 0.25rem;
+    border-radius: 50% 0.25rem 50% 0.25rem;
+}
+.hero-content-right img:hover {
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
 }
