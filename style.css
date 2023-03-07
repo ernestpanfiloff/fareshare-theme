@@ -29,6 +29,10 @@ body {
     border-bottom: 2px solid #227363;
 }
 
+.button:hover {
+    opacity: 0.9;
+}
+
 .button-yellow {
     background-color: #FFD55C;
 
@@ -53,7 +57,6 @@ header {
 #header-content-logo img {
     width: 75%;
 }
-
 
 nav ul {
     display: flex;
@@ -80,6 +83,9 @@ nav ul li:hover {
 
 .header-content-hamburger {
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
 .header-content-hamburger-line {
@@ -88,7 +94,22 @@ nav ul li:hover {
     background-color: #FFFFFC;
     margin: 0.25rem 0;
     border-radius: 0.25rem;
+    transition: transform 0.3s, opacity 0.3s;
 }
+
+.header-content-hamburger.is-active .header-content-hamburger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.header-content-hamburger.is-active .header-content-hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.header-content-hamburger.is-active .header-content-hamburger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
 
 
 
@@ -117,7 +138,6 @@ nav ul li:hover {
     font-family: 'DM Serif Display', serif;
     color: #FFFFFC;
     font-size: 3rem;
-
     margin-bottom: 1rem;
 }
 
@@ -136,11 +156,15 @@ nav ul li:hover {
     width: 100%;
     border-radius: 50% 0.25rem 50% 0.25rem;
 }
+
 .hero-content-right img:hover {
     width: 100%;
     transition: 0.5s ease-in-out;
     border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
 }
+
+
+
 
 
 @media screen and (max-width: 900px) {
